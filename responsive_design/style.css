@@ -1,0 +1,187 @@
+ body{
+ 
+	background-color: #E3EFF9;
+	color:#fff;
+	font-size: 87.5%;
+	font-family: Arial, Tahoma;
+	line-height: 1.5;
+	text-align:left;
+ }
+ 
+ a{
+	text-decoration:none;
+	color: #fff;
+ }
+ 
+ a:link, a:visited{
+ 
+}
+
+a:hover, a:active{
+
+}
+ 
+ .body{
+	margin: 0 auto;
+	width:70%;
+	clear:both;
+	
+ }
+ 
+ .mainHeader img{
+	width: 35%;
+	height:auto;
+	margin: 2% 0;
+ }
+ 
+ .mainHeader nav{
+	background-color: #666;
+	height:20px;
+	padding:1%;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+ }
+ 
+ .mainHeader nav ul{
+	list-style:none;
+	margin:0 auto;
+ }
+ 
+ .mainHeader nav ul li{
+	float: left;
+	display:inline;
+	margin-left:10px;
+ }
+ 
+ .mainHeader nav a:link, .mainHeader nav a:visited{
+	color: #fff;
+	display: inline-block;
+	padding:2px 25px;
+	height:20px;
+}
+
+.mainHeader nav a:hover, .mainHeader nav a:active,
+.mainHeader nav .active a:link, .mainHeader nav .active a:visited{
+	background-color: #CF5C3F;
+	text-shadow: none;
+}
+
+.mainHeader nav ul li a{
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+.mainContent{
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	line-height:25px;
+	width:70%;
+	float:left;
+	color: #000;
+	margin-top: 10px;
+}
+
+.article{
+	background-color: #fff;
+	border: 1px solid gray;
+	padding:2%;
+	margin-bottom:2%;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+.articleHeader{
+	color: #0AF;
+	font-weight:bold;
+	font-size: 1.5em;
+}
+
+.article-info{
+	font-style:italic;
+	font-size: 11px;
+}
+
+aside{
+	float: right;
+	width: 27%;
+	line-heigth:25px;
+	border:1px solid gray;
+	background-color: #fff;
+	color: #000;
+	padding: 1%;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+footer.mainFooter{
+	clear: both;
+	background-color: #fff;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	height:50px;
+	margin: 20px 0;
+	color: #000;
+	border:1px solid gray;
+}
+
+footer p{
+	text-align:center;
+}
+
+@media only screen and (min-width: 150px) and (max-width:690px) {
+
+	.body{
+		width:90%;
+	}
+
+	.mainHeader img{
+		width: 90%;
+	 }
+	 
+	.mainHeader nav{
+		height:160px;
+		padding:2%;
+	 }
+	 
+	 .mainHeader nav ul{
+		padding-left:0;
+	 }
+	 
+	 .mainHeader nav ul li{
+		width:100%;
+		text-align:center;
+		margin-left:0;
+	 }
+	 
+	 .mainHeader nav a:link, .mainHeader nav a:visited{
+		padding:10px 10px;
+		height:20px;
+		display:block;
+	}
+	
+	.mainContent{
+		line-height:25px;
+		width:100%;
+		float:left;
+		background-color: #fff;
+		color: #000;
+		margin-top: 5px;
+	}
+
+	article{
+		padding:2%;
+		margin: 5% 0;
+	}
+	
+	aside{
+		width: 100%;
+	}
+}

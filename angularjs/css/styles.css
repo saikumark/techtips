@@ -1,0 +1,57 @@
+body{
+	font-family: Arial;
+	font-size:12px;
+	padding: 0px;
+	margin: 0px;
+}
+#doc{
+	margin:0 auto;
+	width:990px;
+}
+
+#header, #content, #footer{
+	width:100%;
+}
+
+#header h1{
+	font-weight:strong;
+	width:100%;
+	text-align:center;
+}
+
+#footer{
+	text-align:center;
+	font-size:11px;
+	width:100%;
+}
+
+
+.team, .teamHead, .player, .playerHead{
+	width:100%;
+	clear:both;
+	padding:10px;
+	border:1px solid #000;
+	height:50px;
+	overflow:hidden;
+}
+
+.teamHead, .playerHead {
+	font-weight:bold;
+	font-size:14px;
+}
+
+.teamName, .teamImage, .teamAction, .playerName, .playerImage{
+	float:left;
+	width:200px;
+}
+
+.teamImage img, .playerImage img{
+	width:25px;
+	height:25px;
+}
+
+.error{
+    margin-top:10px;
+    color:#f00;
+    font-weight:bold;
+}

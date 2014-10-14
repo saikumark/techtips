@@ -1,0 +1,60 @@
+@import 'common';
+
+.mainContent{
+	width: 70%;
+	margin: 0 auto;
+	padding:1%;
+}
+
+@mixin contentRadius($radius){
+	border-radius: $radius;
+	-moz-border-radius: $radius;
+}
+
+.mainContent{
+
+	.header{
+
+		@include contentRadius(5px);
+		background-color: #333;
+		color:#fff;
+		height:10%;
+		text-align: center;
+
+		h1{
+			padding-top:10px;
+		}
+	}
+}
+
+
+.articles{
+	.article{
+		@include contentRadius(5px);
+		width:100%;
+		background-color: #ddd;
+		padding:1% 0;
+		margin-top: 2%;
+
+		.articleDetails{
+			margin-left: 2%;
+		}
+	}
+
+	.articleHead{
+		font-weight: bold;
+		margin-left: 2%;
+	}
+
+
+	.articleContent{
+		margin-left: 2%;
+		padding: 5px 0;
+	}
+	
+}	
+
+.cssValidator, .html5Validator{
+	float: left;
+	margin-left: 5px;
+}
