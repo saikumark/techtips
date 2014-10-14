@@ -27,8 +27,12 @@ body {
 .mainContent .header h1 {
   padding-top: 10px;
 }
+/* line 28, style.scss */
+.mainContent .header a {
+  color: white;
+}
 
-/* line 32, style.scss */
+/* line 36, style.scss */
 .articles .article {
   border-radius: 5px;
   -moz-border-radius: 5px;
@@ -37,22 +41,22 @@ body {
   padding: 1% 0;
   margin-top: 2%;
 }
-/* line 39, style.scss */
+/* line 43, style.scss */
 .articles .article .articleDetails {
   margin-left: 2%;
 }
-/* line 44, style.scss */
+/* line 48, style.scss */
 .articles .articleHead {
   font-weight: bold;
   margin-left: 2%;
 }
-/* line 50, style.scss */
+/* line 54, style.scss */
 .articles .articleContent {
   margin-left: 2%;
   padding: 5px 0;
 }
 
-/* line 57, style.scss */
+/* line 61, style.scss */
 .cssValidator, .html5Validator {
   float: left;
   margin-left: 5px;
