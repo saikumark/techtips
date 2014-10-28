@@ -5,6 +5,7 @@ $(document).ready(function() {
 
 		var clicked = '';
 		var parts = [];
+		var calculated = false;
 
 		this.init = function(){
 			$("span.button").bind('click', handlerOperation);
@@ -26,6 +27,12 @@ $(document).ready(function() {
 					break;
 
 				default:
+
+					if(calculated == true){
+						clearCalcInput();
+						calculated = false;
+					}
+
 					populateCalcInput();
 
 			}
@@ -33,11 +40,12 @@ $(document).ready(function() {
 
 		var parseOperators = function(){
 			parts = [];
+			calculated = true;
 			var currentVal = $("#calcInput").val();
 			
 			var operators = ['\\+','\\-','\\x','\\/'];
 			var additionParts = currentVal.split(new RegExp(operators.join('|'),'g'));
-			alert(additionParts);
+			//alert(additionParts);
 			
 			for(var i=0, p=0; i<currentVal.length; i++){
 
