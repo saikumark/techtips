@@ -1,0 +1,13 @@
+team
+	id
+	name
+	logoUri
+	status
+	
+player
+	id
+	teamId
+	firstName
+	lastName
+	imageUri
+	

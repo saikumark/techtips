@@ -1,0 +1,18 @@
+<div ng-controller="courseController">
+<div class="floatLeft"><h1>{{coursePageTitle}}</h1></div><div ng-show="loggedIn" class="floatRight"><a href="#courses" ng-click="showDetails = !showDetails">Add Course</a></div>
+<div ng-show="showDetails" class="addCourseBlock">
+	<label for="name">Name</label>
+	<input type="text" name="courseName" id="courseName" value="" />
+	<button name="addCourse" class="button" ng-click="addCourse()">Add</button>
+</div>
+<div class="teamHead">
+	<div class="courseName">Course Name</div>
+	<div class="courseChapter">Syllabus</div>
+	<div class="courseAction">Action</div>
+</div>
+<div class="team" ng-repeat="course in courses">
+	<div class="courseName">{{course.name}}</div>
+	<div class="courseChapter"><a href="/#/syllabus/{{course.id}}"></a></div>
+	<div ng-show="loggedIn" class="courseAction"><a ng-href="/#/deleteCourse/delete-{{course.id}}">Delete</a></div>
+</div>
+</div>

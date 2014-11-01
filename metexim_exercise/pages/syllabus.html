@@ -1,0 +1,14 @@
+<div ng-controller="teamController">
+<p><a href="/angularjs/#/teams">Back to Teams</a></p>
+<div class="playerHead">
+	<div class="playerName">Player Name</div>
+	<div class="playerImage">Player Photo</div>
+</div>
+<div class="player" ng-repeat="player in players">
+	<div class="playerName">{{player.firstName}} {{player.lastName}}</div>
+	<div class="playerImage"><img src="{{player.photoUrl}}" /></div>
+</div>
+<div class="error">
+    <span>{{error}}</span>
+</div>
+</div>

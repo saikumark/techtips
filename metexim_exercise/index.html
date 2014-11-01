@@ -1,0 +1,45 @@
+<!doctype html>
+<html ng-app="collegeApp" lang="en">
+<head>
+	<title>Christ College</title>
+	<!-- META Tags -->
+	<meta charset="utf-8">
+	<meta name="description" content="College Students and Courses">
+	<meta name="author" content="Saikumar Kuppusamy">
+	<!-- Load Styles -->
+	<link rel="stylesheet" href="css/styles.css">
+	
+	<!-- Angular JS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>  
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-cookies.min.js"></script>
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+</head>
+
+<body ng-controller="mainController">
+	<div id="doc">
+		<header>
+			<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="/">Christ College</a>
+				</div>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="/#/"><i class="fa fa-home"></i> Home</a></li>
+					<li><a href="/#/courses"><i class="fa fa-shield"></i>Courses</a></li>
+					<li ng-show="loggedIn"><a href="/#/logout"><i class="fa fa-shield"></i>Logout</a></li>
+					<li ng-show="!loggedIn"><a href="/#/login"><i class="fa fa-shield"></i>Login</a></li>
+					
+				</ul>
+			</div>
+			</nav>
+		</header>	  
+		<div id="main">
+			<div ng-view>test</div>
+		</div>
+		<div id="footer">
+		</div>
+  </div>
+  <script src="js/scripts.js"></script>
+</body>
+</html>

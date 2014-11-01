@@ -1,0 +1,8 @@
+<h1>Login</h1>
+<div ng-controller="loginController">
+	<form name="loginForm" role="form">
+		<input type="text" id="username" data-ng-model="username" required />
+		<input type="password" id="password" data-ng-model="password" required />
+		<input type="button" name="login" data-ng-click="validateLogin()" value="Login" />
+	</form>
+</div>
