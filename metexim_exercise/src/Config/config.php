@@ -1,7 +1,7 @@
 <?php
-define('DB_NAME','college');
-define('DB_USERNAME','college');
-define('DB_PASSWORD','C0ll2eg$');
+define('DB_NAME','collegeSai');
+define('DB_USERNAME','collegeSai');
+define('DB_PASSWORD','C0ll2eg@');
 define('DB_HOST','localhost');
 
 function __autoload($className){
