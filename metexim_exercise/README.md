@@ -12,11 +12,14 @@ Course (1) -> Syllabus (1) -> Chapters (n)
 
 Tech Stack:
 ----------
-HTML5, CSS3, SASS, Angular JS, jQury, PHP, MySQL
+HTML5, CSS3, Angular JS, jQury, PHP, MySQL
 
 DB Schema:
 ----------
 course: id int(11), name varchar(100)
+
 syllabus: id int(11), course_id int(11), name varchar(100), chapters text
+
 student: id int(11), professor_id int(11), name varchar(100), course_id int(11)
+
 professor: id int(11), name varchar(100)
