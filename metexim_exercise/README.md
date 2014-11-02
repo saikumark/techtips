@@ -10,7 +10,9 @@ Professor (1) -> Student (n)
 
 Student (1) -> Course (n)
 
-Course (1) -> Syllabus (1) -> Chapters (n)
+Course (1) -> Syllabus (n) 
+
+Syllabus (1) -> Chapters (n)
 
 Tech Stack:
 ----------
