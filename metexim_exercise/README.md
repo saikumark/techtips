@@ -7,7 +7,9 @@ We need to have web application which would list the different courses and its d
 Relationship:
 ------------
 Professor (1) -> Student (n)
+
 Student (1) -> Course (n)
+
 Course (1) -> Syllabus (1) -> Chapters (n)
 
 Tech Stack:
